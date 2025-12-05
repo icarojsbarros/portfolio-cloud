@@ -15,10 +15,10 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Atualizado de v3 para v4
 
     - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v1
+      uses: hashicorp/setup-terraform@v3 # Atualizado de v1 para v3 (Correção do Warning)
 
     - name: Terraform Init
       run: terraform init
