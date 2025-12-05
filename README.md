@@ -14,9 +14,9 @@ The project provisions a Linux server (Ubuntu) on AWS, configures a firewall (Se
 ```mermaid
 graph TD;
     User((Internet User)) -->|HTTP:80| FW[AWS Security Group];
-    subgraph AWS Cloud [AWS Cloud (us-east-1)]
+    subgraph AWS ["AWS Cloud (us-east-1)"]
         FW -->|Allow| EC2[EC2 Instance (t3.micro)];
-        subgraph EC2 Instance
+        subgraph Instance ["EC2 Instance"]
             Docker[Docker Engine] -->|Runs| App[Nginx Container];
         end
     end
