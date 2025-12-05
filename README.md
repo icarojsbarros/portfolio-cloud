@@ -49,7 +49,7 @@ The application is automatically deployed and accessible via the public internet
 3.  **Bootstrap:** User Data scripts (Bash) install Docker and launch the application container upon instance initialization.
 4.  **Verify:** The application becomes accessible via the instance's Public IP.
 
-## ⚠️ Challenges & Solutions (Interview Notes)
+## ⚠️ Challenges & Solutions
 
 * **Free Tier Compliance:** Adapted the instance type from `t2.micro` to `t3.micro` to align with the latest AWS Free Tier eligibility in the us-east-1 region.
 * **State Management:** Managed Terraform state limitations within a CI/CD ephemeral environment by ensuring clean resource destruction and manual conflict resolution when necessary.
@@ -65,5 +65,5 @@ To elevate this project to a production-grade enterprise environment, the follow
 ---
 
 ## 👤 Author
-**Icaro**
+**Icaro Barros**
 * [Connect on LinkedIn](https://www.linkedin.com/in/icarojsbarros/)
