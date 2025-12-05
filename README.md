@@ -22,11 +22,12 @@ graph TD;
             Docker["Docker Engine"] -->|Runs| App["Nginx Container"];
         end
     end
+```
+
+---
 
 ## 📸 Proof of Concept
 The application is automatically deployed and accessible via the public internet immediately after the pipeline finishes.
-
----
 
 ![Application Running](proof-of-concept.png)
 
